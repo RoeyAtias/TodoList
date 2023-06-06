@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="datetime-local"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto 0;
+    max-width: 320px;
+  }
+  
+  .formHeader {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .taskButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .task {
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .task.fade-out, .task.fade-in {
+    opacity: 0;
+  }
+
+  #uncompletedTasks,
+  #completedTasks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .taskContainer {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/153/301/original/vector-old-dirty-grunge-note-paper-background.jpg);
+    width: 200px;
+    height: 370px;
+    margin: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .taskButtons .input {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  #saveBtn {
+    background-color: rgb(166, 166, 1);
+  }
+
+  .Urgent {
+    color: #c82333;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+  }
+
+  .Wait {
+    color: #0056b3;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+
+  }
+
+  .Hold {
+    color: #d4ca0c;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+  }
+
+  .line {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+  }
+
+  .desc {
+        overflow-y: scroll;
+        word-wrap: break-word;
+        max-height: 35px;
+        white-space: pre-wrap;
+        text-align: left;
+
+      
+  }
+
+  h2 {
+    text-align: center;
+  }

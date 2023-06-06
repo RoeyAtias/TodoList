@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/156c67268e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="form">
+        <h1>To Do List</h1>
+        <form onsubmit="return false">
+            <div>
+                <label for="taskName">Task's Name:</label>
+                <p class="error" id="taskP"></p>
+                <input required id="taskName" placeholder="Enter Your Task" type="text">
+            </div>
+            <div>
+                <label for="taskDesc">Task's Desc:</label>
+                <p class="error" id="descP"></p>
+                <textarea required id="taskDesc" placeholder="Enter Your Task Desc"></textarea>
+            </div>
+            <div>
+                <label for="deadline">Deadline:</label>
+                <p class="error" id="deadlineP"></p>
+                <input required id="deadline" placeholder="Enter the deadline (date)" type="datetime-local">
+            </div>
+            <div class="form-group">
+                <label for="choose">Urgency:</label>
+                <p class="error" id="urgentP"></p>
+                <div class="input-wrapper">
+                  <select required class="form-control" name="" id="choose">
+                    <option disabled selected value="0">Choose Category</option>
+                    <option value="Very Urgent">Very Urgent</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Can Wait">Can Wait</option>
+                    <option value="On Hold">On Hold</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="input-wrapper">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-wrapper">
+                    <button id="btn" class="btn btn-primary">Add New Task</button>
+                    <button onclick="cleanForm()" class="btn btn-danger ml-2" type="reset" title="Clean Form">Clear Form</button>
+                    <button type="button" id="saveBtn" class="btn btn-warning" style="display: none">Save</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <h1>Task Manager</h1>
+    <h2>Uncompleted Tasks</h2>
+    <div id="uncompletedTasks"></div>
+    <h2>Completed Tasks</h2>
+    <div id="completedTasks"></div>
+
+</body>
+</html>
